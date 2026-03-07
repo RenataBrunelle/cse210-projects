@@ -10,7 +10,7 @@ class Program
 
         do
         {
-            Console.WriteLine("Informe seu palpite: ");
+            Console.WriteLine("State your guess: ");
             string current_guess = Console.ReadLine();
             guess = int.Parse(current_guess);
             if (guess < number_magic)
