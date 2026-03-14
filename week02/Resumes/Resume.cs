@@ -5,15 +5,22 @@ public class Resume
 {
     public string _name;
     public List<Job> _jobs = new List<Job>();
+    public List<Education> _education = new List<Education>();
 
     public void Display()
     {
         Console.WriteLine($"Name: {_name}");
         Console.WriteLine("Jobs:");
-
         foreach (Job job in _jobs)
         {
             job.Display();
         }
+        Console.WriteLine("Education:");
+        foreach (Education edu in _education)
+        {
+            edu.Display();
+        }
     }
 }
+
+//

@@ -23,7 +23,15 @@ public class Program
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
+        Education edu1 = new Education();
+        edu1._school = "FANESE";
+        edu1._degree = "GTI";
+        edu1._graduationYear  = 2016;
+        myResume._education.Add(edu1);
+
         myResume.Display();
+
+
     }
 }
 
