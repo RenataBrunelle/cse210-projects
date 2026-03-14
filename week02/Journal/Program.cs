@@ -1,5 +1,5 @@
 using System;
-
+// I put a option for clear the journal
 class Program
 {
     static void Main(string[] args)
@@ -57,7 +57,7 @@ class Program
             }
             else if (info == "5")
             {
-                
+
             }
 
 
