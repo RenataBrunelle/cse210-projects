@@ -43,13 +43,9 @@ class Journal
         }
     }
 
-    public void Delete(string file)
+    public void Delete()
     {
-        if (File.Exists(file))
-        {
-            File.Delete(file);
-            _entries.Clear();
-            Console.WriteLine("File successfully deleted.");
-        }
+        _entries.Clear();
+        Console.WriteLine("The current newspaper was successfully cleaned (only in memory).");
     }
 }

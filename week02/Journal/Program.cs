@@ -57,7 +57,7 @@ class Program
             }
             else if (info == "5")
             {
-
+                theJournal.Delete();
             }
 
 
