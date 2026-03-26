@@ -4,7 +4,7 @@ using System.Reflection.Metadata;
 public class Scripture
 {
     private Reference _reference;
-    List<Word> _words = new List<Word>();
+    private List<Word> _words = new List<Word>();
 
     public Scripture(Reference reference, string text)
     {
@@ -58,7 +58,7 @@ public class Scripture
     {
         foreach (Word word in _words)
         {
-            word.Show(); 
+            word.Show();
         }
     }
 
