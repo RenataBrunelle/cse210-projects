@@ -19,7 +19,7 @@ public class Video{
         _comments.Add(comment);
     }
 
-    public int QtyComment()
+    public int QtyComments()
     {
         return _comments.Count;
     }
@@ -29,7 +29,7 @@ public class Video{
         Console.WriteLine($"Title: {_title}");
         Console.WriteLine($"Author: {_author}");
         Console.WriteLine($"Length: {_length} seconds");
-        Console.WriteLine($"Quantity of Comments: {QtyComment()}");
+        Console.WriteLine($"Quantity of Comments: {QtyComments()}");
         Console.WriteLine("Comments:");
 
         foreach (Comment c in _comments)

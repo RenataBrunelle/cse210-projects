@@ -14,8 +14,6 @@ class Program
         _video01.AddComment(_comment02);
         _video01.AddComment(_comment03);
 
-        _video01.DisplayVideoInfo();
-
         Video _video02 = new Video("Trees", "Melissa", 101);
         Comment _comment04 = new Comment("Victor", "It's a beautiful video");
         Comment _comment05 = new Comment("Joseph", "I loved this video.");
@@ -24,8 +22,6 @@ class Program
         _video02.AddComment(_comment04);
         _video02.AddComment(_comment05);
         _video02.AddComment(_comment06);
-
-        _video02.DisplayVideoInfo();
 
         Video _video03 = new Video("Cars", "Joseph",150);
         Comment _comment07 = new Comment("Michael", "Wow !!!!!!!!!!!!!!!");
@@ -36,7 +32,16 @@ class Program
         _video03.AddComment(_comment08);
         _video03.AddComment(_comment09);
 
-        _video03.DisplayVideoInfo();
+        List<Video> _videos = new List<Video>();
+
+        _videos.Add(_video01);
+        _videos.Add(_video02);
+        _videos.Add(_video03);
+
+        foreach (Video v in _videos)
+        {
+            v.DisplayVideoInfo();
+        }
 
     }
 }
